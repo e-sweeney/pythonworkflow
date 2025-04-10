@@ -14,4 +14,6 @@ jobs:
         pwd
         ls  -al
         pwd
-        python ModelCleaning/cleandata.py
+        cd ModelCleaning
+        pip install pandas
+        python cleandata.py
