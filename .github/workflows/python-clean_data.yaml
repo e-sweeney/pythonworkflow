@@ -9,6 +9,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        path: ./ModelCleaning
     - name: clean_data
       run: |
         pwd
