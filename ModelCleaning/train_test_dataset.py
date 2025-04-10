@@ -35,4 +35,17 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 mind = LinearRegression()
 mind.fit(X_train,  y_train)
-dump(mind, "AgeSalaryModel.pkl")
+
+#dump(mind, "AgeSalaryModel.pkl")
+
+pkl_file_path = os.path.join(model_cleaning_dir, 'AgeSalaryModel.pkl')
+
+dump(mind, pkl_file_path) 
+
+# Check if the file exists (for debugging)
+if os.path.exists(pkl_file_path):
+    print(f"File found: {pkl_file_path}")
+else:
+    print(f"File not found at: {pkl_file_path}")
+
+   
