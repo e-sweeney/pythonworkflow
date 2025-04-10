@@ -22,4 +22,4 @@ jobs:
     - name: train_test_dataset
       run: |
         pip install scikit-learn joblib
-        python train_test_dataset.py
+        python ModelCleaning/train_test_dataset.py
