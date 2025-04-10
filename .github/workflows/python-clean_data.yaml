@@ -18,6 +18,7 @@ jobs:
         cd ModelCleaning
         pip install pandas
         python cleandata.py
+        ls -al ModelCleaning
 
     - name: train_test_dataset
       run: |
