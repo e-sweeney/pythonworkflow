@@ -3,7 +3,7 @@ from joblib import dump
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
-df = read_csv("cleandata.csv")
+df = read_csv("cleaned_data.csv")
 
 X= df["Age"].values.reshape(30,1)
 y= df["Salary"]
