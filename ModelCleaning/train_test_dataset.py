@@ -9,6 +9,8 @@ workspace = os.getenv('GITHUB_WORKSPACE')
 # Define the directory where your Python script is located (ModelCleaning)
 model_cleaning_dir = os.path.join(workspace, 'ModelCleaning')
 
+mode_dir = os.path.join(workspace, 'Models')
+
 # Define the full path to the cleaned data CSV file
 csv_file_path = os.path.join(model_cleaning_dir, 'cleaned_data.csv')
 
@@ -38,7 +40,7 @@ mind.fit(X_train,  y_train)
 
 #dump(mind, "AgeSalaryModel.pkl")
 
-pkl_file_path = os.path.join(model_cleaning_dir, 'AgeSalaryModel.pkl')
+pkl_file_path = os.path.join(model_dir, 'AgeSalaryModel.pkl')
 
 dump(mind, pkl_file_path) 
 
