@@ -9,6 +9,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+
     - name: clean_data
       run: |
         pwd
@@ -17,3 +18,9 @@ jobs:
         cd ModelCleaning
         pip install pandas
         python cleandata.py
+
+    - name: train_test_dataset
+      run: |
+        pip install scikit-lean joblib
+        python train_test_dataset.py
+        
