@@ -16,3 +16,5 @@ jobs:
         pwd
         ls -l
         cd ./ModelCleaning
+        ls  -al
+        pwd
