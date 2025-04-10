@@ -1,3 +1,4 @@
+import os
 from pandas import read_csv
 from joblib import dump
 from sklearn.linear_model import LinearRegression
