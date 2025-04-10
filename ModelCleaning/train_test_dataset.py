@@ -19,7 +19,7 @@ else:
     print(f"File not found at: {csv_file_path}")
 
 # Read the cleaned data CSV file
-df = pd.read_csv(csv_file_path)
+df = read_csv(csv_file_path)
 
 # Proceed with your training logic
 print(df.head()) 
