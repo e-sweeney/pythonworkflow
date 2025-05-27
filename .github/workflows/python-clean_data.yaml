@@ -1,5 +1,9 @@
 name: pythonworkflow
-on: workflow_dispatch
+on:
+  push:
+    paths:
+      - 'ModelCleaning/**'
+#on: workflow_dispatch
 
 jobs:
 
